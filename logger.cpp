@@ -42,25 +42,25 @@ std::ostream& Logger::log(const LogLevel m_level)
     m_log << '\t';
     switch(m_level)
     {
-    case Logger::LogLevel::LOGERROR :
+    case Logger::LogLevel::ERROR :
             m_log << "[Error]  : ";
             break;
-        case Logger::LogLevel::LOGWARNING:
+        case Logger::LogLevel::WARNING:
             m_log << "[Warning]: ";
             break;
-        case Logger::LogLevel::LOGINFO:
+        case Logger::LogLevel::INFO:
             m_log << "[INFO]   : ";
             break;
-        case Logger::LogLevel::LOGDEBUG:
+        case Logger::LogLevel::DEBUG:
             m_log << "[DEBUG]  : ";
             break;
-        case Logger::LogLevel::LOGDEBUG1:
+        case Logger::LogLevel::DEBUG1:
             m_log << "[DEBUG1] : ";
             break;
-        case Logger::LogLevel::LOGDEBUG2:
+        case Logger::LogLevel::DEBUG2:
             m_log << "[DEBUG2] : ";
             break;
-        case Logger::LogLevel::LOGDEBUG3:
+        case Logger::LogLevel::DEBUG3:
             m_log << "[DEBUG3] : ";
             break;
         default:

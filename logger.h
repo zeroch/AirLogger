@@ -7,6 +7,7 @@
  * write run time infomation into text file
  */
 
+#define LOG(level) Logger::getInstance().log(level)
 
 class Logger
 {
@@ -14,13 +15,13 @@ class Logger
 public:
 /* enum to get the log level */
 enum LogLevel {
-    LOGERROR = 0,
-    LOGWARNING,
-    LOGINFO,
-    LOGDEBUG,
-    LOGDEBUG1,
-    LOGDEBUG2,
-    LOGDEBUG3
+    ERROR = 0,
+    WARNING,
+    INFO,
+    DEBUG,
+    DEBUG1,
+    DEBUG2,
+    DEBUG3
 };
 /*
  * Singleton design pattern
